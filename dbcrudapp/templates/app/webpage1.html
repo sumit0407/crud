@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'app/style.css' %}" >
+</head>
+<body>
+    <form action="#" method="POST">{% csrf_token %} 
+        <marquee style="background-color: black; color: chartreuse;"><h1>HELLO DJANGO</h1></marquee>
+        <h3 style="text-align: center;background-color: darkorange;">REGISTATION FORM</h3>
+        <table align="center" cellspacing="0" cellpadding="10" border="10">
+            <tr class="un">
+                <td>USERNAME</td>
+                <td><input style="background-color: gainsboro;" type="text" name="uname"></td>
+            </tr>
+            <tr class="em">
+                <td>EMAIL</td>
+                <td><input style="background-color: gainsboro;" type="email" name="eml"></td>
+            </tr>
+            <tr class="ps">
+                <td>PASSWORD</td>
+                <td><input type="password" style="background-color: gainsboro; " name="passwd"></td>
+            </tr>
+
+            <tr style="background-color: bisque;">
+                <td><input type="submit" value="register"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
